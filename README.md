@@ -7,13 +7,11 @@ struct employee {
 };
 
 
-// Function to calculate gross salary
 void calc_salary(struct employee *e) {
     e->gross = e->basic + e->allowance;
 }
 
 
-// Function to sort employees by gross salary (descending)
 void sort_salary(struct employee arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = i + 1; j < n; j++) {
@@ -28,7 +26,7 @@ void sort_salary(struct employee arr[], int n) {
 
 
 int main() {
-    struct employee employees[10];  // Directly use 10 instead of a #define SIZE
+    struct employee employees[10];  
     int n;
 
 
@@ -42,7 +40,6 @@ int main() {
     }
 
 
-    // Input employee details
     for (int i = 0; i < n; i++) {
         printf("\nEnter details of employee %d\n", i + 1);
         printf("Name: ");
@@ -57,12 +54,10 @@ int main() {
     }
 
 
-    // Sort employees by gross salary (descending)
-    sort_salary(employees, n);
+       sort_salary(employees, n);
 
 
-    // Display sorted salary details
-    printf("\n-------------------------------------------------\n");
+       printf("\n-------------------------------------------------\n");
     printf(" No | Name           | Basic   | Allowance | Gross Salary\n");
     printf("-------------------------------------------------\n");
     for (int i = 0; i < n; i++) {
@@ -78,3 +73,5 @@ int main() {
 
     return 0;
 }
+
+
