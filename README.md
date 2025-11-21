@@ -3,7 +3,7 @@
 
 struct employee {
     char name[30];
-    double basic, allowance, gross;
+    float basic, allowance, gross;
 };
 
 
