@@ -43,7 +43,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         printf("\nEnter details of employee %d\n", i + 1);
         printf("Name: ");
-        scanf("%29s", employees[i].name);  // Added a limit to avoid buffer overflow
+        scanf("%s", employees[i].name);  // Added a limit to avoid buffer overflow
         printf("Basic Salary: ");
         scanf("%lf", &employees[i].basic);
         printf("Allowance: ");
